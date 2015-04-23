@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget widgetId="" appId="10030629" channelCode="000" version="0.1">
+	<name>测试uexMediaPlayer</name>
+	<description>测试插件uexMediaPlayer</description>
+	<author email="wuling@cooder.org">wuling</author>
+	<icon src="icon.png"></icon>
+	<license href="https://github.com/yanxiyue/appcan-plugin-android/blob/master/LICENSE"></license>
+	<content src="index.html" encoding="utf-8"></content>
+	<logserverip>192.168.1.1</logserverip>
+	<obfuscation>false</obfuscation>
+	<updateurl></updateurl>
+	<showmyspace>true</showmyspace>
+	<bgcolor>#fefefe</bgcolor>
+	<widgetOne version="[widgetOneVersion]" />
+	<orientation>15</orientation>
+</widget>

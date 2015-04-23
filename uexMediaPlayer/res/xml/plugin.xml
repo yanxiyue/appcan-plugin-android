@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uexplugins>
+	<plugin
+        className="org.cooder.appcan.plugin.EUExMediaPlayer" uexName="uexMediaPlayer" >
+        <method name="open" />
+        <method name="stop" />
+        <method name="setVolume" />
+        <method name="pause" />
+        <method name="play" />
+        <method name="seekTo" />
+    </plugin>
+</uexplugins>

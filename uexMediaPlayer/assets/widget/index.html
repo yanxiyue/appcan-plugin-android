@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<style>
+	    #btn1 {
+	        display: none;
+	    }
+	</style>
+	
+	
+	<script type="text/javascript">
+
+	function onPrepared(opCode, dataType, data){
+        alert(data);
+		document.getElementById('btn1').style.display = 'block';
+	}
+	
+	window.uexOnload = function(type){
+		if(type == 0){  
+			uexMediaPlayer.onPrepared = onPrepared;
+		}
+	}
+</script>
+</head>
+
+<body>
+	<div class="tit">uexMediaPlayer对象</div>
+	<div class="conbor">
+		<div class="consj">
+			<input class="btn" type="button" value="open" onclick="uexMediaPlayer.open('daily_sentence_music.m4a');"><br>
+            <div id="btn1">
+			<input class="btn" type="button" value="play" onclick="uexMediaPlayer.play();"><br>
+			<input class="btn" type="button" value="pause" onclick="uexMediaPlayer.pause();"><br>
+			<input class="btn" type="button" value="stop" onclick="uexMediaPlayer.stop();"><br>
+			<input class="btn" type="button" value="静音" onclick="uexMediaPlayer.setVolume(0, 0);"><br>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>
