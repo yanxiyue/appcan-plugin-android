@@ -34,6 +34,10 @@ public class EUExMediaPlayer extends EUExBase implements OnPreparedListener {
             mediaPath = context.getCacheDir().getAbsolutePath() + File.separator + param[0];
             File file = new File(mediaPath);
             if (!file.exists()) {
+                File dir = file.getParentFile();
+                if (!dir.exists()) {
+                    dir.mkdirs();
+                }
                 InputStream is = context.getAssets().open("widget" + File.separator + param[0]);
                 FileOutputStream fos = new FileOutputStream(mediaPath);
                 StreamUtil.copyStream(is, fos);

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uexplugins>
+	<plugin
+        uexName="uexMediaPlayer" version="1.0" build="0">
+        <info>build 0: MediaPlayer音乐播放基本功能</info>
+    </plugin>
+</uexplugins>
